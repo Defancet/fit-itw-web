@@ -38,7 +38,7 @@ $(document).ready(function () {
         var linkHref = $(this).attr('href');
         var stickyNavHeight = $('#sticky-nav').outerHeight();
 
-        ('html, body').animate({
+        $('html, body').animate({
             scrollTop: $(linkHref).offset().top - stickyNavHeight
         }, 1000);
     });
